@@ -8,7 +8,7 @@ export default function LayoutAdmin({ children }: { children: ReactNode }) {
 			<Header />
 			<div className='flex h-screen'>
 				<Sidebar />
-				<main className='pt-28 px-8 w-full'>{children}</main>
+				<main className='pt-28 px-8 w-full bg-light-50'>{children}</main>
 			</div>
 		</>
 	);

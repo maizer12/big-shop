@@ -1,12 +1,12 @@
 type Details = {
-	cash: string;
-	card: string;
-	credit: string;
+	type: string;
+	value: string;
 };
 
 export interface DashboardCard {
 	title: string;
 	amount: string;
-	details: Details;
-	icon: React.ReactNode;
+	details: Details[];
+	color?: string;
+	icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
