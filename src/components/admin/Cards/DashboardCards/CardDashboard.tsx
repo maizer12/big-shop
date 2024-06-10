@@ -1,4 +1,4 @@
-import { DashboardCard } from '@/types/DashboardCard.type';
+import { DashboardCard } from '@/types/Dashboard/DashboardCard.type';
 import React from 'react';
 import cn from 'classnames';
 

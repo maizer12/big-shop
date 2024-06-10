@@ -1,4 +1,4 @@
-import { Package, ShoppingCart, CreditCard, DollarSign } from 'lucide-react';
+import { Package, ShoppingCart, CreditCard, DollarSign, RefreshCw, Settings, Check } from 'lucide-react';
 
 export const dashboardCards = [
 	{
@@ -55,4 +55,11 @@ export const dashboardCards = [
 		color: 'bg-blue-700',
 		icon: DollarSign,
 	},
+];
+
+export const dashboardStatusCards = [
+	{ title: 'Total Orders', value: '552', Icon: ShoppingCart },
+	{ title: 'Orders Pending', value: '185', Icon: RefreshCw },
+	{ title: 'Orders Processing', value: '45', Icon: Settings },
+	{ title: 'Orders Delivered', value: '306', Icon: Check },
 ];

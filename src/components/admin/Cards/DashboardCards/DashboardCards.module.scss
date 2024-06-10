@@ -1,0 +1,31 @@
+.card-status {
+	@apply flex gap-6 items-center bg-light-1000 rounded-xl p-8;
+
+	.icon {
+		@apply bg-blue-400 flex justify-center items-center w-14 h-14 rounded-[50%] text-light-400;
+	}
+
+	&:nth-child(2) {
+		.icon {
+			@apply bg-blue-500;
+		}
+	}
+	&:nth-child(3) {
+		.icon {
+			@apply bg-blue-600;
+		}
+	}
+	&:nth-child(4) {
+		.icon {
+			@apply bg-blue-700;
+		}
+	}
+
+	.name {
+		@apply text-base text-dark-400;
+	}
+
+	.value {
+		@apply text-2xl font-bold text-dark-900;
+	}
+}
