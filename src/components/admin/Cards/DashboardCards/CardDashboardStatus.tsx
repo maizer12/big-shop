@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './DashboardCards.module.scss';
 import { DashboardCardStatus } from '@/types/Dashboard/DashboardCardStatus.type';
+import cn from 'classnames';
 
 interface IProps {
 	item: DashboardCardStatus;
 }
 
 export default function CardDashboardStatus({ item }: IProps) {
+	const { bgColor, color } = item;
+
 	return (
 		<li className={styles['card-status']}>
-			<div className={styles.icon}>
+			<div className={cn(styles.icon, bgColor, color)}>
 				<item.Icon />
 			</div>
 			<div>

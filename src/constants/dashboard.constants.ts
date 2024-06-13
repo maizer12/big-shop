@@ -10,7 +10,8 @@ export const dashboardCards = [
 			{ type: 'credit', value: '€0.00' },
 		],
 		icon: Package,
-		color: 'bg-blue-400',
+		color: 'text-blue-700',
+		bgColor: 'bg-blue-100',
 	},
 	{
 		title: 'Yesterday Orders',
@@ -20,7 +21,8 @@ export const dashboardCards = [
 			{ type: 'card', value: '€0.00' },
 			{ type: 'credit', value: '€0.00' },
 		],
-		color: 'bg-blue-500',
+		color: 'text-purple-600',
+		bgColor: 'bg-purple-100',
 		icon: Package,
 	},
 	{
@@ -31,6 +33,8 @@ export const dashboardCards = [
 			{ type: 'card', value: '€0.00' },
 			{ type: 'credit', value: '€0.00' },
 		],
+		color: 'text-green-600',
+		bgColor: 'bg-green-100',
 		icon: ShoppingCart,
 	},
 	{
@@ -41,7 +45,8 @@ export const dashboardCards = [
 			{ type: 'card', value: '€0.00' },
 			{ type: 'credit', value: '€0.00' },
 		],
-		color: 'bg-blue-600',
+		color: 'text-orange-600',
+		bgColor: 'bg-orange-100',
 		icon: CreditCard,
 	},
 	{
@@ -52,14 +57,40 @@ export const dashboardCards = [
 			{ type: 'card', value: '€0.00' },
 			{ type: 'credit', value: '€0.00' },
 		],
-		color: 'bg-blue-700',
+		color: 'text-yellow-600',
+		bgColor: 'bg-yellow-100',
 		icon: DollarSign,
 	},
 ];
 
 export const dashboardStatusCards = [
-	{ title: 'Total Orders', value: '552', Icon: ShoppingCart },
-	{ title: 'Orders Pending', value: '185', Icon: RefreshCw },
-	{ title: 'Orders Processing', value: '45', Icon: Settings },
-	{ title: 'Orders Delivered', value: '306', Icon: Check },
+	{
+		title: 'Total Orders',
+		value: '552',
+		Icon: ShoppingCart,
+		color: 'text-orange-600',
+		bgColor: 'bg-orange-100',
+	},
+	{
+		title: 'Orders Pending',
+		value: '185',
+		Icon: RefreshCw,
+		color: 'text-purple-600',
+		bgColor: 'bg-purple-100',
+	},
+	{
+		title: 'Orders Processing',
+		value: '45',
+		Icon: Settings,
+		color: 'text-blue-700',
+		bgColor: 'bg-blue-100',
+	},
+	{
+		title: 'Orders Delivered',
+		value: '306',
+		Icon: Check,
+
+		color: 'text-yellow-600',
+		bgColor: 'bg-yellow-100',
+	},
 ];
