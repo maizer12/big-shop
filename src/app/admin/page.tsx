@@ -5,6 +5,7 @@ import React from 'react';
 import styles from './Dashboard.module.scss';
 import WeeklySalesChart from '@/components/admin/Dashboard/WeeklySalesChart';
 import BestSellingProductsChart from '@/components/admin/Dashboard/BestSellingProductsChart';
+import LastOrders from '@/components/admin/Dashboard/LastOrders';
 
 function page() {
 	return (
@@ -20,10 +21,11 @@ function page() {
 					<CardDashboardStatus item={e} key={e.title} />
 				))}
 			</ul>
-			<section className='mt-9 grid  grid-cols-2 gap-10 pb-14'>
+			<section className='mt-9 grid  grid-cols-2 gap-10 mb-12'>
 				<WeeklySalesChart />
 				<BestSellingProductsChart />
 			</section>
+			<LastOrders />
 		</>
 	);
 }

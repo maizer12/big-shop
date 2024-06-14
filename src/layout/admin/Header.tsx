@@ -8,10 +8,10 @@ export default function Header() {
 				<Link href='/' className=' text-2xl font-bold text-dark-900 '>
 					METU
 				</Link>
-				<button className='flex flex-col justify-center items-center w-10 h-10 focus:outline-none border rounded-[50%] border-blue-400'>
-					<div className='w-6 h-[3px] rounded-[4px] bg-blue-400 mb-1'></div>
-					<div className='w-6 h-[3px] rounded-[4px] bg-blue-400 mb-1'></div>
-					<div className='w-6 h-[3px] rounded-[4px] bg-blue-400'></div>
+				<button className='flex flex-col justify-center items-center mr-2'>
+					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 mb-1'></div>
+					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 mb-1'></div>
+					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 '></div>
 				</button>
 			</div>
 		</header>
