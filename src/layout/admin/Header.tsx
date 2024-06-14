@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import UserActionsPanel from './UserActionsPanel';
 
 export default function Header() {
 	return (
@@ -9,11 +10,12 @@ export default function Header() {
 					METU
 				</Link>
 				<button className='flex flex-col justify-center items-center mr-2'>
-					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 mb-1'></div>
-					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 mb-1'></div>
-					<div className='w-6 h-[3px] rounded-[4px] bg-dark-900 '></div>
+					<div className='w-6 h-[2px] rounded-[12px] bg-zinc-600 mb-[6px]'></div>
+					<div className='w-6 h-[2px] rounded-[12px] bg-zinc-600 mb-[6px]'></div>
+					<div className='w-6 h-[2px] rounded-[12px] bg-zinc-600'></div>
 				</button>
 			</div>
+			<UserActionsPanel />
 		</header>
 	);
 }
