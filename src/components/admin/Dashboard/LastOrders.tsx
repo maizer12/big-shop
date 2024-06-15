@@ -1,16 +1,16 @@
 'use client';
-import Pagination from '@/common/admin/Pagination';
+import Pagination from '../../../common/admin/Pagination';
 import React, { useState } from 'react';
 
 export default function LastOrders() {
 	const [open, setOpen] = useState(0);
 
 	return (
-		<section className=' bg-light-1000 rounded-[20px] p-7'>
+		<section className=' bg-light-1000 rounded-[20px] p-7 dark:bg-gray-800'>
 			<h3 className='font-bold text-lg mb-12'>Last Orders:</h3>
 			<div className='relative overflow-x-auto shadow-md sm:rounded-lg mb-14'>
 				<table className='w-full text-sm text-left rtl:text-right  '>
-					<thead className='text-xs  uppercase bg-gray-50 text-dark-900'>
+					<thead className='text-xs  uppercase bg-gray-50 dark:bg-gray-800 text-dark-900 dark:text-white'>
 						<tr>
 							<th scope='col' className='px-6 py-3'>
 								Product name
@@ -30,8 +30,8 @@ export default function LastOrders() {
 						</tr>
 					</thead>
 					<tbody>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -43,8 +43,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -56,8 +56,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -69,8 +69,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -82,8 +82,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -95,8 +95,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>
@@ -108,8 +108,8 @@ export default function LastOrders() {
 								</a>
 							</td>
 						</tr>
-						<tr className='odd:bg-white  even:bg-gray-50 border-b '>
-							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '>
+						<tr className=' dark:bg-gray-800 dark:border-white  bg-gray-50 border-b '>
+							<th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
 								Apple MacBook Pro 17"
 							</th>
 							<td className='px-6 py-4'>Silver</td>

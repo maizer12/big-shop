@@ -10,8 +10,8 @@ export default function CardDashboard({ item }: IProps) {
 	const { color, bgColor, amount, title } = item;
 
 	return (
-		<li className='bg-light-1000 rounded-lg flex flex-col py-6 px-6'>
-			<div className={cn('w-14 h-14 flex justify-center rounded-[8px] items-center p-2', bgColor, color)}>
+		<li className='bg-light-1000 rounded-lg flex flex-col py-6 px-6 dark:bg-gray-800'>
+			<div className={cn('w-14 h-14 flex justify-center rounded-[8px] items-center p-2 dark:bg-white ', bgColor, color)}>
 				<item.icon className='w-12 h-12 relative z-10 block' strokeWidth={1} />
 			</div>
 			<h5 className='mt-2 font-medium'>{title}</h5>

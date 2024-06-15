@@ -17,7 +17,7 @@ const pieData = {
 
 export default function BestSellingProductsChart() {
 	return (
-		<div className='bg-light-1000 rounded-lg p-8'>
+		<div className='bg-light-1000 rounded-lg p-8 dark:bg-gray-800'>
 			<h2 className='font-bold mb-11  text-lg'>Best Selling Products</h2>
 			<div className='max-h-[320px]  flex justify-center items-center'>
 				<Pie data={pieData} />

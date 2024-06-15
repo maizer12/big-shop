@@ -60,7 +60,7 @@ export default function WeeklySalesChart() {
 	const showContent = tabsContent.find(e => e.value === tab);
 
 	return (
-		<div className='bg-light-1000 rounded-lg p-8'>
+		<div className='bg-light-1000 rounded-lg p-8 dark:bg-gray-800'>
 			<h2 className='font-bold mb-11  text-lg'>Weekly Sales</h2>
 			<ul className='flex mb-3'>
 				{tabs.map(e => (

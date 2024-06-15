@@ -1,6 +1,7 @@
 import LayoutAdmin from '@/layout/admin/LayoutAdmin';
 import '../../assets/styles/globals.scss';
 import { Inter } from 'next/font/google';
+import { NextThemesProvider } from '@/context/providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<LayoutAdmin>{children}</LayoutAdmin>
+				<NextThemesProvider>
+					<LayoutAdmin>{children}</LayoutAdmin>
+				</NextThemesProvider>
 			</body>
 		</html>
 	);

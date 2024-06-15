@@ -1,15 +1,7 @@
 .card-status {
-	@apply flex gap-6 items-center bg-light-1000 rounded-xl p-8;
+	@apply flex gap-6 items-center bg-light-1000 rounded-xl p-8 dark:bg-gray-800;
 
 	.icon {
 		@apply flex justify-center items-center w-14 h-14 rounded-[50%];
-	}
-
-	.name {
-		@apply text-base text-dark-400;
-	}
-
-	.value {
-		@apply text-2xl font-bold text-dark-900;
 	}
 }

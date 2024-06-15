@@ -11,13 +11,13 @@ export default function CardDashboardStatus({ item }: IProps) {
 	const { bgColor, color } = item;
 
 	return (
-		<li className={styles['card-status']}>
-			<div className={cn(styles.icon, bgColor, color)}>
+		<li className={styles['card-status'] + ' dark:bg-gray-800'}>
+			<div className={cn(styles.icon, bgColor, color) + ' dark:bg-white'}>
 				<item.Icon />
 			</div>
 			<div>
-				<p className={styles.name}>{item.title}</p>
-				<h4 className={styles.value}>{item.value}</h4>
+				<p className='text-base text-dark-400 dark:text-slate-300'>{item.title}</p>
+				<h4 className='text-2xl font-bold text-dark-900 dark:text-white'>{item.value}</h4>
 			</div>
 		</li>
 	);
