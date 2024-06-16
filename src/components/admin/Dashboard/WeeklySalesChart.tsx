@@ -74,7 +74,7 @@ export default function WeeklySalesChart() {
 					{showContent && (
 						<CSSTransition key={tab} timeout={100} classNames=''>
 							{(state: TransitionStatus) => (
-								<div className='h-[320px] flex justify-center items-center' style={{ ...transitionStyles[state], width: '100%' }}>
+								<div className='h-[320px] flex justify-center items-center ' style={{ ...transitionStyles[state], width: '100%' }}>
 									<Line data={showContent.data} />
 								</div>
 							)}

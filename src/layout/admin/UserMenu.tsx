@@ -26,7 +26,7 @@ export default function UserMenu() {
 			</DropdownMenuTrigger>
 			<DropdownMenuContent className='right-[-20px] top-1 absolute pt-2'>
 				{userMenuItems.map(e => (
-					<DropdownMenuLabel className='flex items-center gap-2 mb-2 cursor-pointer duration-500 hover:text-blue-400'>
+					<DropdownMenuLabel className='flex items-center gap-2 mb-2 cursor-pointer duration-500 hover:text-blue-400' key={e.label}>
 						<e.icon />
 						{e.label}
 					</DropdownMenuLabel>

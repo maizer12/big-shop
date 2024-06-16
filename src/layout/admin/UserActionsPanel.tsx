@@ -1,4 +1,4 @@
-import { SunIcon } from 'lucide-react';
+import { Moon, SunIcon } from 'lucide-react';
 import React from 'react';
 import UserMenu from './UserMenu';
 import UserNotification from './UserNotification';
@@ -14,9 +14,7 @@ function UserActionsPanel() {
 
 	return (
 		<div className='pr-12 flex items-center gap-7'>
-			<button onClick={switchTheme}>
-				<SunIcon className=' text-yellow-400 w-7 h-7 ' />
-			</button>
+			<button onClick={switchTheme}>{theme === 'dark' ? <SunIcon className=' text-yellow-400 w-7 h-7 ' /> : <Moon className=' text-blue-400 w-7 h-7 ' />}</button>
 			<UserNotification />
 			<UserMenu />
 		</div>

@@ -62,7 +62,7 @@ export default function UserNotification() {
 			</DropdownMenuTrigger>
 			<DropdownMenuContent className='right-[-20px] top-1 absolute pt-2 w-[350px] '>
 				{notifications.map((e, i) => (
-					<DropdownMenuLabel className='flex items-center gap-2 justify-between mb-2'>
+					<DropdownMenuLabel className='flex items-center gap-2 justify-between mb-2 cursor-pointer dark:hover:bg-blue-400 hover:bg-blue-50 duration-300' key={i}>
 						<Image width={45} height={45} src='/user.webp' alt='User' className='rounded-[50%]' />
 						<div className=''>
 							<h4 className='font-normal'>{e.message.slice(0, 28) + '...'}</h4>

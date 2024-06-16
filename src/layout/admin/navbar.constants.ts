@@ -8,6 +8,4 @@ export const navbarLinks = [
 	{ href: '#', text: 'Farmers', icon: Package },
 	{ href: '#', text: 'Orders', icon: Clipboard },
 	{ href: '#', text: 'Staff', icon: User },
-	{ href: '#', text: 'Farmers', icon: Package },
-	{ href: '#', text: 'Orders', icon: Clipboard },
 ];
