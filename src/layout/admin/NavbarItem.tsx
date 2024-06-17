@@ -22,10 +22,10 @@ export default function NavbarItem({ item, active }: { item: ItemType; active: b
 			<Accordion type='single' collapsible>
 				<AccordionItem value={item.text}>
 					<AccordionTrigger>
-						<button className='flex gap-4 text-lg pl-4 text-violet-400 py-3.5 items-center dark:text-white dark:opacity-[0.7] w-fit'>
+						<div className='flex gap-4 text-lg pl-4 text-violet-400 py-3.5 items-center dark:text-white dark:opacity-[0.7] w-fit'>
 							<Icon />
 							{text}
-						</button>
+						</div>
 					</AccordionTrigger>
 					<AccordionContent className='flex flex-col p-6 pl-8 py-4 bg-light-50 dark:bg-slate-600 gap-2'>
 						{menu.map((e, i) => (
