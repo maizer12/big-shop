@@ -29,8 +29,8 @@ export default function NavbarItem({ item, active }: { item: ItemType; active: b
 					</AccordionTrigger>
 					<AccordionContent className='flex flex-col p-6 pl-8 py-4 bg-light-50 dark:bg-slate-600 gap-2'>
 						{menu.map((e, i) => (
-							<Link href={e.href} key={i} className='text-base '>
-								{e.label}
+							<Link href={e.href} key={i} className='text-base'>
+								<span className='mr-2'>-</span> {e.label}
 							</Link>
 						))}
 					</AccordionContent>
